@@ -1,0 +1,68 @@
+.container {
+	width: 80%;
+	height: 80%;
+
+	display: flex;
+	flex-direction: column;
+
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	padding: 20px;
+}
+
+.image {
+	display: none;
+	width: 100px;
+	height: 130px;
+}
+
+.buttons {
+	display: flex;
+	justify-content: space-evenly;
+	margin-bottom: 20px;
+}
+
+button {
+	padding: 0.475rem;
+	border: none;
+	border-radius: 8px;
+	cursor: pointer;
+	transition: background 0.3s;
+	font-size: 1.15rem;
+}
+
+.fight-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+}
+
+#versus {
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 1.5rem;
+	display: none;
+}
+
+@media screen and (width >= 768px) {
+	.fight-container {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		gap: 50px;
+		height: 500px;
+	}
+
+	.image {
+		width: 200px;
+		height: 200px;
+	}
+
+	button {
+		padding: 10px 20px;
+	}
+}
